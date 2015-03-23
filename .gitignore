@@ -1,0 +1,8 @@
+public/lib
+node_modules
+npm-*.log
+coverage
+public/assets/dist
+public/app/compiled/*
+meow.sublime-workspace
+test
