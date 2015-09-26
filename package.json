@@ -1,23 +1,37 @@
 {
   "name": "meow",
   "version": "1.0.0",
-  "description": "Yo for Cats",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
+  "description": "Meow your friends.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "exit 0",
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/alisamfp/meow.git"
+    "url": "https://github.com/AlisamfP/meow.git"
   },
   "keywords": [
     "cats",
+    "meow",
     "yo"
   ],
   "author": "Alisa Palson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alisamfp/meow/issues"
+    "url": "https://github.com/AlisamfP/meow/issues"
   },
-  "homepage": "https://github.com/alisamfp/meow",
+  "homepage": "https://github.com/AlisamfP/meow",
+  "dependencies": {
+    "coffee-script": "^1.10.0",
+    "gulp": "^3.9.0",
+    "gulp-autowatch": "^1.0.2",
+    "gulp-less": "^3.0.3",
+    "gulp-util": "^3.0.6",
+    "gulp-webserver": "^0.9.1",
+    "path": "^0.12.7",
+    "react": "^0.13.3",
+    "react-router": "^1.0.0-rc1",
+    "webpack": "^1.12.2"
+  }
 }
