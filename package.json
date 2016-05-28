@@ -1,0 +1,65 @@
+{
+  "name": "meow",
+  "version": "1.0.0",
+  "description": "Yo for cat people",
+  "main": "index.js",
+  "dependencies": {
+    "classnames": "^2.2.0",
+    "history": "^1.17.0",
+    "isomorphic-fetch": "^2.2.0",
+    "lodash": "^3.10.1",
+    "react": "^0.14.2",
+    "react-cookie": "^0.4.2",
+    "react-dom": "^0.14.3",
+    "react-layout-pane": "^0.1.16",
+    "react-redux": "^4.0.0",
+    "react-router": "^1.0.3",
+    "redux": "^3.0.4",
+    "redux-devtools": "^2.1.5",
+    "redux-logger": "^2.2.1",
+    "redux-router": "^1.0.0-beta5",
+    "redux-thunk": "^1.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.1.0",
+    "babel-core": "^5.4.7",
+    "babel-eslint": "^3.1.9",
+    "babel-loader": "^5.1.2",
+    "babel-plugin-react-transform": "^1.1.1",
+    "coffee-script": "^1.10.0",
+    "css-loader": "^0.22.0",
+    "eslint": "^1.9.0",
+    "eslint-plugin-react": "^3.8.0",
+    "express": "^4.13.3",
+    "postcss-loader": "^0.8.0",
+    "postcss-scss": "^0.1.3",
+    "precss": "^1.3.0",
+    "react-transform-catch-errors": "^1.0.0",
+    "react-transform-hmr": "^1.0.1",
+    "redbox-react": "^1.1.1",
+    "rimraf": "^2.4.3",
+    "style-loader": "^0.13.0",
+    "suitcss-base": "^1.0.1",
+    "suitcss-utils": "^0.10.3",
+    "webpack": "^1.12.4",
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-hot-middleware": "^2.5.0"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
+    "build": "npm run clean && npm run build:webpack",
+    "start": "node devServer.js",
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alisamfp/meow.git"
+  },
+  "author": "Alisa Palson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alisamfp/meow/issues"
+  },
+  "homepage": "https://github.com/alisamfp/meow#readme"
+}
