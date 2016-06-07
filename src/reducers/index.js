@@ -1,11 +1,11 @@
 import {combineReducers} from 'redux'
 import { routerStateReducer as router } from 'redux-router'
 
-import devices from './device'
+import users from './user'
 
 
 const rootReducer = combineReducers({
-  devices,
+  users,
   router
 })
 

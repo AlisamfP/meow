@@ -2,38 +2,28 @@ import _ from 'lodash'
 import { connect } from 'react-redux'
 import { replaceState, pushState } from 'redux-router'
 import React, { Component } from 'react'
-import { Layout, Fixed, Flex } from 'react-layout-pane'
-//
-// import NavBar from '../components/nav-bar'
-// import Spinner from '../components/spinner'
-// import TopBar from '../components/top-bar'
+
+import { fetchCatList } from '../actions/user-actions'
+import MeowCard from '../components/meow-cards'
 
 class Cats extends Component {
   componentDidMount() {
-    //fetch users
-  }
+    const { dispatch } = this.props
 
-  componentWillReceiveProps() {
-
-  }
-
-  handleLogout = () => {
-    console.log("logging out...")
+    dispatch(fetchCatList())
   }
 
   render() {
-    const {children} = this.props
-    //
-    // if (!orgs.all) return <Spinner size="large" />
-    // if (!orgs.selectedOrg) return <Spinner size="large" />
+    const {children, users} = this.props
 
-    return <Layout type="column">
-      <Flex>
-        <Layout type="column">
-        <Flex>Hello</Flex>
-        </Layout>
-      </Flex>
-    </Layout>
+    if(!users.catList) return <h1>LOADING</h1>;
+
+    return <div>
+      <div>
+        <h1>MEOW</h1>
+        <MeowCard catList={users.catList} />
+      </div>
+    </div>
   }
 }
 

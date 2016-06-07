@@ -1,1 +1,1 @@
-// export const SELECT_ORG                    = 'SELECT_ORG'
+export const FETCH_CAT_LIST = 'FETCH_CAT_LIST'

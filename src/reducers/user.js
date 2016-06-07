@@ -4,15 +4,17 @@ import * as types from '../constants/action-types'
 var initialState = {
   error: false,
   fetching: false,
-  users: null
+  catList: null
 }
 
 export default function(state = initialState, action) {
 
   switch(action.type) {
 
-    // case types.ACTION:
-    //   return _.assign({}, state, { })
+    case types.FETCH_CAT_LIST:
+      return _.assign({}, state, {
+        catList: action.catList
+      })
 
     default:
       return state;
