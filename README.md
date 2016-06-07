@@ -1,2 +1,2 @@
 # meow
-Yo for cat people
+Yo for Cats
