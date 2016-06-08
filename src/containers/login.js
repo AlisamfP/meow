@@ -15,10 +15,6 @@ class Cats extends Component {
     dispatch(fetchCatList())
   }
 
-  handleMeow(cat) {
-    console.log(`${cat.name} SAYS MEOW`);
-  }
-
   render() {
     const {children, users} = this.props
 
@@ -27,7 +23,7 @@ class Cats extends Component {
     return <div className="container">
       <h1>MEOW</h1>
       <div>
-        <MeowCard catList={users.catList} handleMeow={this.handleMeow} />
+        <MeowCard catList={users.catList} />
       </div>
     </div>
   }
